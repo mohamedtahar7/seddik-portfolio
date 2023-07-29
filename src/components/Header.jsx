@@ -5,7 +5,7 @@ const Header = () => {
         <a href="#">
           <img
             className="w-[6%]"
-            src="/src/assets/seddik-logo.png"
+            src="https://i.postimg.cc/HLYtLPWf/seddik-logo.png"
             alt="seddik logo"
           />
         </a>

@@ -5,7 +5,7 @@ const About = () => {
       <div className="py-4 px-8 bg-white rounded-3xl">
         <img
           className="w-[17vw]"
-          src="/src/assets/seddik-logo.png"
+          src="https://i.postimg.cc/HLYtLPWf/seddik-logo.png"
           alt="logo"
         />
       </div>
