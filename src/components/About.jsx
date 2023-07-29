@@ -1,6 +1,6 @@
 const About = () => {
   return (
-    <section className="flex items-center  gap-48 px-16">
+    <section id="about" className="flex items-center gap-48 px-16">
       {/* about img */}
       <div className="py-4 px-8 bg-white rounded-3xl">
         <img
