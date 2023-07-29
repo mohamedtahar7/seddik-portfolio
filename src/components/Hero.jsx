@@ -9,12 +9,20 @@ const Hero = () => {
         <p className="text-2xl mb-12 text-[#bbb]">
           A Video Editor's Creative Showcase 🎬✨
         </p>
-        <a
-          className="text-xl hover:bg-[#071221] transition text-white py-4 px-6 rounded-xl bg-[#0a192f] "
-          href="#"
-        >
-          View More
-        </a>
+        <div className="flex items-center gap-6">
+          <a
+            className="text-xl hover:opacity-80 transition text-[#0a192f] py-4 px-6 rounded-xl bg-white"
+            href="#contact"
+          >
+            Contact Us
+          </a>
+          <a
+            className="text-xl hover:bg-[#071221] transition text-white py-4 px-6 rounded-xl bg-[#0a192f] "
+            href="#about"
+          >
+            Learn More
+          </a>
+        </div>
       </div>
       {/* Img Hero */}
       <div className="w-[70vw]">
