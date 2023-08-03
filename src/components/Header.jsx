@@ -54,11 +54,50 @@ const Header = () => {
       </div>
       <div className="md:hidden block">
         {mobileNav ? (
-          <MdClose className="text-white" size={30} />
+          <MdClose
+            onClick={() => setMobileNav((prev) => setMobileNav(!prev))}
+            className="text-white"
+            size={30}
+          />
         ) : (
-          <FiMenu className="text-white" size={30} />
+          <FiMenu
+            onClick={() => setMobileNav((prev) => setMobileNav(!prev))}
+            className="text-white"
+            size={30}
+          />
         )}
       </div>
+      {/* Mobile Nav */}
+      <ul
+        className={`absolute transition-all top-20 right-4 md:hidden bg-[#0a192f] py-3 px-6 ${
+          mobileNav ? "flex" : "hidden"
+        } flex-col items-center gap-6`}
+      >
+        <li>
+          <a
+            className="text-xl hover:opacity-80 text-white font-normal"
+            href="#about"
+          >
+            About
+          </a>
+        </li>
+        <li>
+          <a
+            className="text-xl hover:opacity-80 text-white font-normal"
+            href="#about"
+          >
+            Projects
+          </a>
+        </li>
+        <li>
+          <a
+            className="text-xl hover:opacity-80 text-white font-normal"
+            href="#contact"
+          >
+            Contact
+          </a>
+        </li>
+      </ul>
     </nav>
   );
 };
