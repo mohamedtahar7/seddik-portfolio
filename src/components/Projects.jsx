@@ -6,13 +6,13 @@ import { categories } from "../utils/categories";
 const Projects = () => {
   const [category, setCategory] = useState("All");
   return (
-    <section id="projects" className="mt-28 px-16">
+    <section id="projects" className="mt-28 mb-28 px-16">
       <h1 className="text-white text-center text-3xl font-medium">
         Our Projects
       </h1>
       <div className="flex sm:flex-row flex-col justify-center gap-4 mt-10 items-center">
         <h3 className="text-xl text-[#fff]">Filter :</h3>
-        {/* <div className="flex md:flex-row flex-col sm:w-auto w-fit gap-4 items-center">
+        <div className="lg:flex hidden md:flex-row flex-col sm:w-auto w-fit gap-4 items-center">
           {categories.map((type, index) => (
             <p
               onClick={() => {
@@ -26,12 +26,12 @@ const Projects = () => {
               {type}
             </p>
           ))}
-        </div> */}
+        </div>
         <select
           onChange={(e) => {
             setCategory(e.target.value);
           }}
-          className="py-1 px-6 text-lg rounded-2xl"
+          className="lg:hidden block py-1 px-6 text-lg rounded-2xl"
           id="categories"
         >
           {/* <option value={category}>{category}</option> */}

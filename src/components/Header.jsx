@@ -69,9 +69,9 @@ const Header = () => {
       </div>
       {/* Mobile Nav */}
       <ul
-        className={`absolute transition-all top-20 right-4 md:hidden bg-[#0a192f] py-3 px-6 ${
-          mobileNav ? "flex" : "hidden"
-        } flex-col items-center gap-6`}
+        className={`flex absolute transition-all ${
+          mobileNav ? "top-20" : "-top-96"
+        } right-4 md:hidden bg-[#0a192f] py-3 px-6 flex-col items-center gap-6`}
       >
         <li>
           <a
