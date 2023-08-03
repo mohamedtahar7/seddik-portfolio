@@ -12,9 +12,9 @@ const ProjectCard = ({ project }) => {
         {categories.map((category, index) => (
           <h6
             key={index}
-            className="text-white w-fit font-medium rounded-xl bg-[#3c1642] py-1 px-2"
+            className="text-sm text-white w-fit font-medium rounded-xl bg-[#3c1642] py-1 px-2"
           >
-            {category}
+            #{category}
           </h6>
         ))}
       </div>

@@ -1,4 +1,5 @@
 export const categories = [
+  "All",
   "Top 5",
   "Top 10",
   "Recaps",

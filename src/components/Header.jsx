@@ -1,16 +1,30 @@
+import { useState, useEffect } from "react";
+import { FiMenu } from "react-icons/fi";
+import { MdClose } from "react-icons/md";
 const Header = () => {
+  const [activeNav, setActiveNav] = useState(false);
+  const [mobileNav, setMobileNav] = useState(false);
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      window.scrollY > 60 ? setActiveNav(true) : setActiveNav(false);
+    });
+  }, []);
   return (
-    <nav className="bg-[#0a192f] z-20 py-4 px-16 flex items-center justify-between fixed w-full">
-      <div className="relative">
+    <nav
+      className={`${
+        activeNav ? "bg-[#0a192f]" : "bg-none"
+      } z-20 transition-all py-4 px-16 flex items-center justify-between fixed w-full`}
+    >
+      <div className="">
         <a href="#">
           <img
-            className="w-[6%]"
+            className="md:w-[10%] lg:w-[6%] w-[17%]"
             src="https://i.postimg.cc/HLYtLPWf/seddik-logo.png"
             alt="seddik logo"
           />
         </a>
       </div>
-      <div>
+      <div className="md:block hidden">
         <ul className="flex items-center gap-6">
           <li>
             <a
@@ -37,6 +51,13 @@ const Header = () => {
             </a>
           </li>
         </ul>
+      </div>
+      <div className="md:hidden block">
+        {mobileNav ? (
+          <MdClose className="text-white" size={30} />
+        ) : (
+          <FiMenu className="text-white" size={30} />
+        )}
       </div>
     </nav>
   );
