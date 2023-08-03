@@ -3,7 +3,7 @@ import { FiMail } from "react-icons/fi";
 import Input from "./Input";
 const Contact = () => {
   return (
-    <div id="contact" className="md:px-28 px-10 sm:py-16">
+    <div id="contact" className="md:px-16 px-10 sm:py-12">
       <div className="sm:p-20 p-8 bg-[#0a192f] drop-shadow-xl rounded-3xl">
         <h1 className="text-3xl font-normal text-[#f7f7f7] mb-6">
           Get In Touch
