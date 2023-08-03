@@ -55,13 +55,13 @@ const Header = () => {
       <div className="md:hidden block">
         {mobileNav ? (
           <MdClose
-            onClick={() => setMobileNav((prev) => setMobileNav(!prev))}
+            onClick={() => setMobileNav((prev) => !prev)}
             className="text-white"
             size={30}
           />
         ) : (
           <FiMenu
-            onClick={() => setMobileNav((prev) => setMobileNav(!prev))}
+            onClick={() => setMobileNav((prev) => !prev)}
             className="text-white"
             size={30}
           />
