@@ -6,7 +6,7 @@ import { categories } from "../utils/categories";
 const Projects = () => {
   const [category, setCategory] = useState("All");
   return (
-    <section id="projects" className="py-28 px-16">
+    <section id="projects" className="mt-28 px-16">
       <h1 className="text-white text-center text-3xl font-medium">
         Our Projects
       </h1>
