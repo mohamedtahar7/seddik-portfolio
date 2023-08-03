@@ -1,6 +1,6 @@
 const Header = () => {
   return (
-    <nav className="bg-[#0a192f] py-4 px-16 flex items-center justify-between fixed w-full">
+    <nav className="bg-[#0a192f] z-20 py-4 px-16 flex items-center justify-between fixed w-full">
       <div className="relative">
         <a href="#">
           <img

@@ -25,10 +25,10 @@ const Hero = () => {
         </div>
       </div>
       {/* Img Hero */}
-      <div className="w-[70vw]">
+      <div className="w-[55vw]">
         <img
-          className="md:block hidden"
-          src="https://i.postimg.cc/Qd4Fp6JL/hero-img.png"
+          className="md:block hidden rounded-full"
+          src="https://i.postimg.cc/s2rJMwmY/hero-img2.jpg"
           alt=""
         />
       </div>
