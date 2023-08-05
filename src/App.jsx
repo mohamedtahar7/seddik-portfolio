@@ -3,6 +3,7 @@ import Header from "./components/Header";
 import Hero from "./components/Hero";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
+import Clients from "./components/Clients";
 function App() {
   return (
     <>
@@ -10,6 +11,7 @@ function App() {
       <Hero />
       <About />
       <Projects />
+      <Clients />
       <Contact />
     </>
   );
