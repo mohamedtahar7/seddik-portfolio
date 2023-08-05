@@ -1,26 +1,26 @@
 export const clients = [
   {
-    img: "/src/youtube-logo/wealth-wisdom.jpg",
+    img: "https://i.postimg.cc/SxnxV0Mn/wealth-wisdom.jpg",
     link: "https://www.youtube.com/@Wealth-Wisdom1/featured",
   },
   {
     img: "/src/youtube-logo/moments-in-history.jpg",
-    link: "https://www.youtube.com/@MomentsInHistory660",
+    link: "https://i.postimg.cc/QCjMqHQD/moments-in-history.jpg",
   },
   {
     img: "/src/youtube-logo/profit-pros.jpg",
-    link: "https://www.youtube.com/@ProfitPros1/featured",
+    link: "https://i.postimg.cc/wBJT8hFH/profit-pros.jpg",
   },
   {
-    img: "/src/youtube-logo/screen-therapy.jpg",
+    img: "https://i.postimg.cc/2jxyS7YS/screen-therapy.jpg",
     link: "",
   },
   {
-    img: "/src/youtube-logo/skynet-ai.jpg",
+    img: "https://i.postimg.cc/rFFm0RyC/skynet-ai.jpg",
     link: "https://www.youtube.com/@SkynetAIRevolution",
   },
   {
-    img: "/src/youtube-logo/x10-recaps.jpg",
+    img: "https://i.postimg.cc/WbW4MphR/x10-recaps.jpg",
     link: "https://www.youtube.com/@x10Recap",
   },
 ];
