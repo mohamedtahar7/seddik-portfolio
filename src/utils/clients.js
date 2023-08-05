@@ -5,11 +5,11 @@ export const clients = [
   },
   {
     img: "/src/youtube-logo/moments-in-history.jpg",
-    link: "https://i.postimg.cc/QCjMqHQD/moments-in-history.jpg",
+    link: "https://i.postimg.cc/gcyscQrL/moments-in-history.jpg",
   },
   {
     img: "/src/youtube-logo/profit-pros.jpg",
-    link: "https://i.postimg.cc/wBJT8hFH/profit-pros.jpg",
+    link: "https://i.postimg.cc/C54svB9s/profit-pros.jpg",
   },
   {
     img: "https://i.postimg.cc/2jxyS7YS/screen-therapy.jpg",
