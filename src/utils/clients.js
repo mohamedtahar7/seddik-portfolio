@@ -4,12 +4,12 @@ export const clients = [
     link: "https://www.youtube.com/@Wealth-Wisdom1/featured",
   },
   {
-    img: "/src/youtube-logo/moments-in-history.jpg",
-    link: "https://i.postimg.cc/gcyscQrL/moments-in-history.jpg",
+    img: "https://i.postimg.cc/gcyscQrL/moments-in-history.jpg",
+    link: "https://www.youtube.com/@MomentsInHistory660",
   },
   {
-    img: "/src/youtube-logo/profit-pros.jpg",
-    link: "https://i.postimg.cc/C54svB9s/profit-pros.jpg",
+    img: "https://i.postimg.cc/C54svB9s/profit-pros.jpg",
+    link: "https://www.youtube.com/@ProfitPros1",
   },
   {
     img: "https://i.postimg.cc/2jxyS7YS/screen-therapy.jpg",

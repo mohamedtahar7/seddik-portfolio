@@ -1,5 +1,3 @@
-import { FiPhone } from "react-icons/fi";
-import { FiMail } from "react-icons/fi";
 import Input from "./Input";
 const Contact = () => {
   return (
