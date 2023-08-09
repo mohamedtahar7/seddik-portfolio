@@ -8,7 +8,7 @@ import Footer from "./components/Footer";
 import Features from "./components/Features";
 function App() {
   return (
-    <main className=" bg-[url('https://i.postimg.cc/JhFGJQcm/bg.png')] w-[100%] bg-no-repeat lg:bg-center bg-cover ">
+    <main className=" bg-[url('/src/assets/bg.jpg')] w-[100%] bg-no-repeat lg:bg-center bg-cover ">
       <Header />
       <Hero />
       <About />
