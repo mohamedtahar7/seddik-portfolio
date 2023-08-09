@@ -1,6 +1,6 @@
 const Hero = () => {
   return (
-    <section className="flex md:flex-row flex-col items-center pt-32 pb-40 px-16">
+    <section className="flex md:flex-row flex-col items-center lg:pt-48 pt-32 pb-40 px-16">
       {/* Text Hero */}
       <div className="w-[75vw]">
         <h1 className="text-6xl font-semibold mb-5 leading-[5rem] text-white">
@@ -25,13 +25,9 @@ const Hero = () => {
         </div>
       </div>
       {/* Img Hero */}
-      <div className="md:block hidden w-[55vw]">
-        <img
-          className="rounded-full"
-          src="https://i.postimg.cc/s2rJMwmY/hero-img2.jpg"
-          alt=""
-        />
-      </div>
+      {/* <div className="lg:block hidden w-[65vw]">
+        <img className="" src="/src/assets/hero.png" alt="" />
+      </div> */}
     </section>
   );
 };

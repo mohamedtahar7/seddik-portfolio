@@ -16,9 +16,9 @@ const About = () => {
       <div className="md:w-[45vw]">
         <h1 className="text-2xl text-white font-semibold mb-6">About Us</h1>
         <p className="text-lg leading-8 text-white font-normal">
-          Introducing CineMagic Studios : Breathing Life into Frames. Witness
-          the artistry and passion that infuse their video editing portfolio,
-          making every moment an unforgettable cinematic experience. 🎥✨
+          Introducing AI Crafted Media : Breathing Life into Frames. Witness the
+          artistry and passion that infuse their video editing portfolio, making
+          every moment an unforgettable cinematic experience. 🎥✨
         </p>
       </div>
     </section>
