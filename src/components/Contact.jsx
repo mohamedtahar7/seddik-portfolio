@@ -30,7 +30,7 @@ const Contact = () => {
           <div className="lg:flex hidden flex-col gap-6 -mt-10">
             <img
               className="w-[85%]"
-              src="/src/assets/Absolute_Reality_v16_man_and_woman_0_clipdrop-background-removal.png"
+              src="https://i.postimg.cc/02ThKHX9/Absolute-Reality-v16-man-and-woman-0-clipdrop-background-removal.png"
               alt="contact illustration"
             />
             <div className="flex flex-col gap-8">
