@@ -5,6 +5,7 @@ import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import Clients from "./components/Clients";
 import Footer from "./components/Footer";
+import Features from "./components/Features";
 function App() {
   return (
     <>
@@ -13,6 +14,7 @@ function App() {
       <About />
       <Projects />
       <Clients />
+      <Features />
       <Contact />
       <Footer />
     </>
