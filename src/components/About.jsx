@@ -13,12 +13,16 @@ const About = () => {
         />
       </div>
       {/* about text */}
-      <div className="md:w-[45vw]">
+      <div className="lg:w-[45vw]">
         <h1 className="text-2xl text-white font-semibold mb-6">About Us</h1>
-        <p className="text-lg leading-8 text-white font-normal">
-          Introducing AI Crafted Media : Breathing Life into Frames. Witness the
-          artistry and passion that infuse their video editing portfolio, making
-          every moment an unforgettable cinematic experience. 🎥✨
+        <p className="text-lg leading-7 text-white font-medium">
+          At AI Crafted Media we're dedicated to turning your creative visions
+          into reality.
+          <br />
+          As a team of passionate freelancers we pride ourselves on delivering
+          top-notch solutions that meet your unique needs.Whether you're an
+          individual, entrepreneur, a startup, or an established business, we're
+          here to help you achieve your goals.
         </p>
       </div>
     </section>

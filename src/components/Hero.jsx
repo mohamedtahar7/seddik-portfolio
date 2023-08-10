@@ -3,21 +3,25 @@ const Hero = () => {
     <section className="flex md:flex-row flex-col items-center lg:pt-48 pt-32 pb-40 px-16">
       {/* Text Hero */}
       <div className="w-[75vw]">
-        <h1 className="text-6xl font-semibold mb-5 leading-[5rem] text-white">
-          Editing Elegance
+        <h1 className="text-6xl tracking-wide font-semibold mb-5 leading-[5rem] text-white">
+          We Craft Media
         </h1>
-        <p className="text-2xl mb-12 text-[#bbb]">
-          A Video Editor's Creative Showcase 🎬✨
+        <p className="text-xl sm:leading-8 lg:w-[58vw] mb-12 text-[#efefef]">
+          At AI Crafted Media we don't just create - we{" "}
+          <span className="font-semibold">craft</span> media🎬✨. <br /> with a
+          blend of creativity and expertise, we transform ideas into captivating
+          content that resonates, engages, and makes a lasting impact. <br />{" "}
+          Welcome to a world where every project is a masterpiece in the making.
         </p>
         <div className="flex md:flex-row flex-col items-center gap-6">
           <a
-            className="md:w-fit w-full text-center text-xl hover:opacity-80 transition text-[#0a192f] py-4 px-6 rounded-xl bg-white"
+            className="md:w-fit w-full text-center text-xl hover:opacity-80 transition text-[#0a192f] py-3 px-6 rounded-xl bg-white"
             href="#contact"
           >
             Contact Us
           </a>
           <a
-            className="md:w-fit w-full text-center text-xl hover:bg-[#071221] transition text-white py-4 px-6 rounded-xl bg-[#0a192f] "
+            className="md:w-fit w-full text-center text-xl hover:bg-[#071221] transition text-white py-3 px-6 rounded-xl bg-[#0a192f] "
             href="#about"
           >
             Learn More
