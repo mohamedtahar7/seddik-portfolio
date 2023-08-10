@@ -40,7 +40,7 @@ const Contact = () => {
                   size={56}
                 />
                 <h1 className="text-white text-xl font-medium">
-                  Our Email : apt@gmail.com
+                  Our Email : contact@aicraftedmedia.com
                 </h1>
               </div>
               <div className="flex flex-row items-center gap-4">

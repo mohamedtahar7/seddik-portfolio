@@ -12,8 +12,8 @@ export const clients = [
     link: "https://www.youtube.com/@ProfitPros1",
   },
   {
-    img: "https://i.postimg.cc/2jxyS7YS/screen-therapy.jpg",
-    link: "",
+    img: "https://i.postimg.cc/N0KFPVzP/4tomorrow.jpg",
+    link: "https://www.youtube.com/@4_Tomorrow",
   },
   {
     img: "https://i.postimg.cc/rFFm0RyC/skynet-ai.jpg",
