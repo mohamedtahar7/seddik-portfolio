@@ -29,7 +29,7 @@ const Contact = () => {
           </form>
           <div className="lg:flex hidden flex-col gap-6 -mt-10">
             <img
-              className="w-[85%]"
+              className="w-[85%] 2xl:w-[45%]"
               src="https://i.postimg.cc/02ThKHX9/Absolute-Reality-v16-man-and-woman-0-clipdrop-background-removal.png"
               alt="contact illustration"
             />
