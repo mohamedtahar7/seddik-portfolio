@@ -10,7 +10,7 @@ const Features = () => {
           services that redefine excellence
         </p>
       </div>
-      <div className="lg:flex items-center gap-28">
+      <div className="lg:flex items-center gap-16">
         <div className="lg:w-[50%] lg:flex lg:flex-col gap-6">
           <div className="flex lg:flex-row flex-col items-center gap-4">
             <img
@@ -58,21 +58,11 @@ const Features = () => {
             </div>
           </div>
         </div>
-        <div className="lg:block hidden relative w-[45%] -mt-40">
+        {/* img */}
+        <div className="lg:block hidden">
           <img
-            className="absolute z-10 -top-16 rounded-3xl rotate-12 shadow-xl left-28 w-[35%]"
-            src="https://i.postimg.cc/D0bB27TL/Absolute-Reality-v16-Create-a-futuristic-design-purpel-and-blu-0.jpg"
-            alt="ai generated image"
-          />
-          <img
-            className="rounded-3xl shadow-inner absolute z-20 top-0 -left-10 w-[35%]"
-            src="https://i.postimg.cc/3xB5MF97/Absolute-Reality-v16-Create-a-futuristic-design-purpel-and-blu-0-1.jpg"
-            alt="ai generated image"
-          />
-          <img
-            className="rounded-3xl absolute left-28 top-20 w-[35%] z-30"
-            src="https://i.postimg.cc/yxQszX7k/3-D-Animation-Style-Create-a-futuristic-design-purpel-and-blue-0.jpg"
-            alt="ai generated image"
+            src="https://i.postimg.cc/pLDbGqJ9/image-0-compressed-compressed-removebg-preview.png"
+            alt="features imgs"
           />
         </div>
       </div>
