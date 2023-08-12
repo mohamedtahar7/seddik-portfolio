@@ -5,15 +5,15 @@ const About = () => {
       className="flex md:flex-row flex-col items-center md:gap-48 gap-20 px-16"
     >
       {/* about img */}
-      <div className="py-4 px-8 bg-white rounded-3xl">
+      <div className="rounded-full">
         <img
-          className="md:w-[17vw]"
-          src="https://i.postimg.cc/HLYtLPWf/seddik-logo.png"
+          className="md:w-[17vw] lg:w-[20vw]"
+          src="https://i.postimg.cc/0ypKbGdY/image-2-compressed.png"
           alt="logo"
         />
       </div>
       {/* about text */}
-      <div className="lg:w-[45vw]">
+      <div className="md:w-[50vw] lg:w-[45vw]">
         <h1 className="text-2xl text-white font-semibold mb-6">About Us</h1>
         <p className="text-lg leading-7 text-white font-medium">
           At AI Crafted Media we're dedicated to turning your creative visions

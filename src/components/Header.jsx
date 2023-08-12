@@ -18,8 +18,8 @@ const Header = () => {
       <div className="">
         <a href="#">
           <img
-            className="md:w-[10%] lg:w-[6%] w-[17%]"
-            src="https://i.postimg.cc/HLYtLPWf/seddik-logo.png"
+            className="lg:w-[30%] sm:w-[70%] md:w-[50%] w-[80%]"
+            src="https://i.postimg.cc/G2D98mzV/image-1-compressed-removebg-preview.png"
             alt="seddik logo"
           />
         </a>
