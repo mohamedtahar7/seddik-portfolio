@@ -1,12 +1,15 @@
 import TypeWriterEffect from "react-typewriter-effect";
 const Hero = () => {
   return (
-    <section className="flex md:flex-row flex-col items-center lg:pt-48 pt-32 pb-40 px-16">
+    <section
+      id="hero"
+      className="flex md:flex-row flex-col items-center lg:pt-48 pt-32 pb-40 px-16"
+    >
       {/* Text Hero */}
       <div className="w-[75vw]">
         <h1 className="text-6xl tracking-wide font-semibold mb-5 leading-[5rem] text-white">
           <TypeWriterEffect
-            startDelay={10}
+            startDelay={100}
             cursorColor="#fff"
             multiText={["We Don't Just Create", "We Craft Media"]}
             multiTextDelay={500}

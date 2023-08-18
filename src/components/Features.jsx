@@ -1,6 +1,6 @@
 const Features = () => {
   return (
-    <section className="px-16 py-16">
+    <section id="features" className="px-16 py-16">
       <div className="flex flex-col  justify-center items-center gap-5">
         <h1 className="text-white text-center text-3xl font-medium">
           Content Package
