@@ -1,10 +1,17 @@
+import TypeWriterEffect from "react-typewriter-effect";
 const Hero = () => {
   return (
     <section className="flex md:flex-row flex-col items-center lg:pt-48 pt-32 pb-40 px-16">
       {/* Text Hero */}
       <div className="w-[75vw]">
         <h1 className="text-6xl tracking-wide font-semibold mb-5 leading-[5rem] text-white">
-          We Craft Media
+          <TypeWriterEffect
+            startDelay={10}
+            cursorColor="#fff"
+            multiText={["We Don't Just Create", "We Craft Media"]}
+            multiTextDelay={500}
+            typeSpeed={30}
+          />
         </h1>
         <p className="text-xl sm:leading-8 lg:w-[58vw] mb-12 text-[#efefef]">
           At AI Crafted Media we don't just create - we{" "}
