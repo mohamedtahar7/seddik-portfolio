@@ -2,13 +2,24 @@ import Input from "./Input";
 import { GrMail } from "react-icons/gr";
 import { FaPhoneAlt } from "react-icons/fa";
 import { FaMapLocationDot } from "react-icons/fa6";
+import { motion } from "framer-motion";
 const Contact = () => {
   return (
     <div id="contact" className="md:px-16 px-10 sm:py-12">
-      <h1 className="text-white mb-8 text-center text-3xl font-medium">
+      <motion.h1
+        whileInView={{ x: 0, opacity: 100 }}
+        initial={{ x: -50, opacity: 0 }}
+        transition={{ delay: 0.2, duration: 0.5 }}
+        className="text-white mb-8 text-center text-3xl font-medium"
+      >
         Contact Us
-      </h1>
-      <div className="sm:p-20 p-8 bg-[#0a192f] drop-shadow-xl rounded-3xl">
+      </motion.h1>
+      <motion.div
+        whileInView={{ x: 0, opacity: 100 }}
+        initial={{ x: -50, opacity: 0 }}
+        transition={{ delay: 0.4, duration: 0.5 }}
+        className="sm:p-20 p-8 bg-[#0a192f] drop-shadow-xl rounded-3xl"
+      >
         <div className="grid lg:grid-cols-2 gap-8">
           <form className="flex flex-col gap-12">
             <Input name="first_name" type="text" label={"Name"} />
@@ -64,7 +75,7 @@ const Contact = () => {
             </div>
           </div>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 };
