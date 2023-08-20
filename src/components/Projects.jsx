@@ -2,9 +2,15 @@ import ProjectCard from "./ProjectCard";
 import { projects } from "../utils/projects";
 import { useState } from "react";
 import CategoryFeed from "./CategoryFeed";
+import Pagination from "./Pagination";
 import { categories } from "../utils/categories";
 import { motion } from "framer-motion";
 const Projects = () => {
+  const [currentPage, setCurrentPage] = useState(1);
+  const projectPerPage = 6;
+  const lastProjectIndex = currentPage * projectPerPage;
+  const firstProjectIndex = lastProjectIndex - projectPerPage;
+  const currentProjects = projects.slice(firstProjectIndex, lastProjectIndex);
   const [category, setCategory] = useState("All");
   return (
     <section id="projects" className="mt-28 mb-28 px-16">
@@ -30,6 +36,7 @@ const Projects = () => {
               }}
               onClick={() => {
                 setCategory(type);
+                setCurrentPage(1);
               }}
               key={index}
               className={`text-md text-white hover:text-white hover:bg-[#0a192f] transition-all cursor-pointer ${
@@ -43,6 +50,7 @@ const Projects = () => {
         <select
           onChange={(e) => {
             setCategory(e.target.value);
+            setCurrentPage(1);
           }}
           className="lg:hidden block py-1 px-6 text-lg rounded-2xl"
           id="categories"
@@ -62,32 +70,73 @@ const Projects = () => {
         </select>
       </div>
       {category === "All" && (
-        <div className="grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-12 mt-10">
-          {projects.map((project, index) => (
-            <ProjectCard key={index} project={project} />
-          ))}
+        <div>
+          <div className="grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-12 mt-10">
+            {currentProjects.map((project, index) => (
+              <ProjectCard key={index} project={project} />
+            ))}
+          </div>
+          <Pagination
+            totalProjects={projects.length}
+            projectPerPage={projectPerPage}
+            setCurrrentPage={setCurrentPage}
+            currentPage={currentPage}
+          />
         </div>
       )}
       {category === "Top 5" && (
-        <CategoryFeed projects={projects} category={category} />
-      )}
-      {category === "Top 10" && (
-        <CategoryFeed projects={projects} category={category} />
+        <CategoryFeed
+          projects={projects.filter((project) =>
+            project.categories.includes("Top 5")
+          )}
+        />
       )}
       {category === "Recaps" && (
-        <CategoryFeed projects={projects} category={category} />
+        <div>
+          <CategoryFeed
+            projects={projects
+              .filter((project) => project.categories.includes("Recaps"))
+              .slice(firstProjectIndex, lastProjectIndex)}
+          />
+          <Pagination
+            totalProjects={
+              projects.filter((project) =>
+                project.categories.includes("Recaps")
+              ).length
+            }
+            projectPerPage={projectPerPage}
+            setCurrrentPage={setCurrentPage}
+            currentPage={currentPage}
+          />
+        </div>
       )}
-      {category === "Shorts" && (
-        <CategoryFeed projects={projects} category={category} />
+      {category === "Finance" && (
+        <CategoryFeed
+          projects={projects.filter((project) =>
+            project.categories.includes("Finance")
+          )}
+        />
       )}
       {category === "Cash Cow" && (
-        <CategoryFeed projects={projects} category={category} />
+        <CategoryFeed
+          projects={projects.filter((project) =>
+            project.categories.includes("Cash Cow")
+          )}
+        />
       )}
       {category === "AI News" && (
-        <CategoryFeed projects={projects} category={category} />
+        <CategoryFeed
+          projects={projects.filter((project) =>
+            project.categories.includes("AI News")
+          )}
+        />
       )}
-      {category === "AI Business" && (
-        <CategoryFeed projects={projects} category={category} />
+      {category === "History" && (
+        <CategoryFeed
+          projects={projects.filter((project) =>
+            project.categories.includes("History")
+          )}
+        />
       )}
     </section>
   );

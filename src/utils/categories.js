@@ -1,10 +1,9 @@
 export const categories = [
   "All",
   "Top 5",
-  "Top 10",
   "Recaps",
-  "Shorts",
+  "Finance",
   "Cash Cow",
   "AI News",
-  "AI Business",
+  "History",
 ];
