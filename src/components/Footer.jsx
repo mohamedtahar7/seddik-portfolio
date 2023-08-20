@@ -4,7 +4,7 @@ const Footer = () => {
     <footer className="sm:px-16 mt-5 px-10 bg-[#0a192f]">
       <div className="border-b-[1px] border-[#f7f7f7]">
         <div className="py-8">
-          <h1 className="text-[#f7f7f7] text-4xl text-center">Follow Me</h1>
+          <h1 className="text-[#f7f7f7] text-4xl text-center">Follow Us</h1>
         </div>
         <div className="flex gap-8 pb-8 items-center justify-center">
           <a href="#" target="_blank">

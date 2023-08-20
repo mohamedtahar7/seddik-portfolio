@@ -97,7 +97,7 @@ const Contact = () => {
                   size={55}
                 />
                 <h1 className="text-white text-xl font-medium">
-                  Our Phone : +213 657 69 65 32
+                  Our Phone : +213 781 28 87 64
                 </h1>
               </div>
               <div className="flex flex-row items-center gap-4">
@@ -106,7 +106,7 @@ const Contact = () => {
                   size={55}
                 />
                 <h1 className="text-white text-xl font-medium">
-                  Our Location : Biskra
+                  Our Location : Biskra - Algeria
                 </h1>
               </div>
             </div>
