@@ -1,13 +1,16 @@
 import Input from "./Input";
 import { GrMail } from "react-icons/gr";
-import { useRef } from "react";
 import Swal from "sweetalert2";
+import { useState, useRef } from "react";
 import emailjs from "@emailjs/browser";
 import { FaPhoneAlt } from "react-icons/fa";
 import { FaMapLocationDot } from "react-icons/fa6";
 import { motion } from "framer-motion";
 const Contact = () => {
   const form = useRef();
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
   const alert = () => {
     Swal.fire({
       position: "top-end",
@@ -19,16 +22,16 @@ const Contact = () => {
   };
   const sendEmail = (e) => {
     e.preventDefault();
-    e.target.reset();
     emailjs
       .sendForm(
-        "service_t97xmdk",
-        "template_vrwd6rn",
+        "service_pipn973",
+        "template_bw1ottb",
         form.current,
-        "3uivQYmuFGHZ8hhzN"
+        "zN88RHjAGr8uW4W90"
       )
       .then(
         (result) => {
+          e.target.reset();
           alert();
         },
         (error) => {
@@ -37,7 +40,7 @@ const Contact = () => {
       );
   };
   return (
-    <div id="contact" className="md:px-16 px-10 sm:py-12">
+    <section id="contact" className="md:px-16 px-10 sm:py-12">
       <motion.h1
         whileInView={{ x: 0, opacity: 100 }}
         initial={{ x: -50, opacity: 0 }}
@@ -54,15 +57,29 @@ const Contact = () => {
       >
         <div className="grid lg:grid-cols-2 gap-8">
           <form
-            onSubmit={sendEmail}
             ref={form}
+            onSubmit={sendEmail}
             className="flex flex-col gap-12"
           >
-            <Input name="client_name" type="text" label={"Name"} />
-            <Input name="client_email" type={"email"} label={"Email"} />
+            <Input
+              onChange={(e) => setName(e.target.value)}
+              value={name}
+              name="client_name"
+              type="text"
+              label={"Name"}
+            />
+            <Input
+              onChange={(e) => setEmail(e.target.value)}
+              value={email}
+              name="client_email"
+              type={"email"}
+              label={"Email"}
+            />
             <textarea
               required
-              name="client_message"
+              value={message}
+              name="message"
+              onChange={(e) => setMessage(e.target.value)}
               cols="30"
               rows="10"
               placeholder="Enter Your Message Here"
@@ -113,7 +130,7 @@ const Contact = () => {
           </div>
         </div>
       </motion.div>
-    </div>
+    </section>
   );
 };
 

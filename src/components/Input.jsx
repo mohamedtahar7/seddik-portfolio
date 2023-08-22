@@ -1,8 +1,10 @@
-const Input = ({ label, type, name }) => {
+const Input = ({ label, name, type, value, onChange }) => {
   return (
     <div className="relative">
       <input
         name={name}
+        value={value}
+        onChange={onChange}
         type={type}
         required
         className="block  rounded-md px-6 pt-6 pb-1 w-full text-xl text-[#0a192f] bg-[#fff] appearance-none focus:outline-none focus:ring-0 peer"
