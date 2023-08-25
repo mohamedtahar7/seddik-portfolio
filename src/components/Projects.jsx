@@ -77,22 +77,26 @@ const Projects = () => {
               />
             ))}
           </div>
-          <Pagination
-            totalProjects={projects.length}
-            projectPerPage={projectPerPage}
-            setCurrrentPage={setCurrentPage}
-            currentPage={currentPage}
-          />
           <IFrame
             activePlayer={activePlayer}
             setActivePlayer={setActivePlayer}
             link={activeLink}
             setActiveLink={setActiveLink}
           />
+          <Pagination
+            totalProjects={projects.length}
+            projectPerPage={projectPerPage}
+            setCurrrentPage={setCurrentPage}
+            currentPage={currentPage}
+          />
         </div>
       )}
       {category === "Top 5" && (
         <CategoryFeed
+          activePlayer={activePlayer}
+          setActivePlayer={setActivePlayer}
+          link={activeLink}
+          setActiveLink={setActiveLink}
           projects={projects.filter((project) =>
             project.categories.includes("Top 5")
           )}
@@ -101,6 +105,10 @@ const Projects = () => {
       {category === "Recaps" && (
         <div>
           <CategoryFeed
+            activePlayer={activePlayer}
+            setActivePlayer={setActivePlayer}
+            link={activeLink}
+            setActiveLink={setActiveLink}
             projects={projects
               .filter((project) => project.categories.includes("Recaps"))
               .slice(firstProjectIndex, lastProjectIndex)}
@@ -119,6 +127,10 @@ const Projects = () => {
       )}
       {category === "Finance" && (
         <CategoryFeed
+          activePlayer={activePlayer}
+          setActivePlayer={setActivePlayer}
+          link={activeLink}
+          setActiveLink={setActiveLink}
           projects={projects.filter((project) =>
             project.categories.includes("Finance")
           )}
@@ -126,6 +138,10 @@ const Projects = () => {
       )}
       {category === "Cash Cow" && (
         <CategoryFeed
+          activePlayer={activePlayer}
+          setActivePlayer={setActivePlayer}
+          link={activeLink}
+          setActiveLink={setActiveLink}
           projects={projects.filter((project) =>
             project.categories.includes("Cash Cow")
           )}
@@ -133,6 +149,10 @@ const Projects = () => {
       )}
       {category === "AI News" && (
         <CategoryFeed
+          activePlayer={activePlayer}
+          setActivePlayer={setActivePlayer}
+          link={activeLink}
+          setActiveLink={setActiveLink}
           projects={projects.filter((project) =>
             project.categories.includes("AI News")
           )}
@@ -140,6 +160,10 @@ const Projects = () => {
       )}
       {category === "History" && (
         <CategoryFeed
+          activePlayer={activePlayer}
+          setActivePlayer={setActivePlayer}
+          link={activeLink}
+          setActiveLink={setActiveLink}
           projects={projects.filter((project) =>
             project.categories.includes("History")
           )}
