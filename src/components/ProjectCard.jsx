@@ -1,14 +1,17 @@
 import { motion } from "framer-motion";
-const ProjectCard = ({ project }) => {
+const ProjectCard = ({ project, setActiveLink, setActivePlayer }) => {
   const { name, categories, img, delay, link } = project;
   return (
-    <motion.a
-      href={link}
+    <motion.div
+      onClick={() => {
+        setActivePlayer(true);
+        setActiveLink(link);
+      }}
       target="_blank"
       whileInView={{ x: 0, opacity: 100 }}
       initial={{ x: -50, opacity: 0 }}
       transition={{ delay: delay, duration: 0.5 }}
-      className="relative hover:opacity-80 transition-all p-6 bg-[#0a192f] rounded-xl"
+      className="cursor-pointer relative hover:opacity-80 transition-all p-6 bg-[#0a192f] rounded-xl"
     >
       <div className="mb-10">
         <img src={img} className="rounded-xl" alt="thumbnail" />
@@ -26,7 +29,7 @@ const ProjectCard = ({ project }) => {
           </h6>
         ))}
       </div>
-    </motion.a>
+    </motion.div>
   );
 };
 

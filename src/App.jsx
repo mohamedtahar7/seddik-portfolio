@@ -6,6 +6,7 @@ import Contact from "./components/Contact";
 import Clients from "./components/Clients";
 import Footer from "./components/Footer";
 import Features from "./components/Features";
+import IFrame from "./components/IFrame";
 function App() {
   return (
     <main className=" bg-[url('/src/assets/bg.jpg')] w-[100%] bg-no-repeat lg:bg-center bg-cover ">
@@ -16,6 +17,7 @@ function App() {
       <Clients />
       <Features />
       <Contact />
+      <IFrame />
       <Footer />
     </main>
   );

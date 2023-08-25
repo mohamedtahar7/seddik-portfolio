@@ -1,4 +1,5 @@
 import ProjectCard from "./ProjectCard";
+import IFrame from "./IFrame";
 import { projects } from "../utils/projects";
 import { useState } from "react";
 import CategoryFeed from "./CategoryFeed";
@@ -7,13 +8,15 @@ import { categories } from "../utils/categories";
 import { motion } from "framer-motion";
 const Projects = () => {
   const [currentPage, setCurrentPage] = useState(1);
+  const [activePlayer, setActivePlayer] = useState(false);
+  const [activeLink, setActiveLink] = useState("");
   const projectPerPage = 6;
   const lastProjectIndex = currentPage * projectPerPage;
   const firstProjectIndex = lastProjectIndex - projectPerPage;
   const currentProjects = projects.slice(firstProjectIndex, lastProjectIndex);
   const [category, setCategory] = useState("All");
   return (
-    <section id="projects" className="mt-28 mb-28 px-16">
+    <section id="projects" className="relative mt-28 mb-28 px-16">
       <motion.h1
         whileInView={{ x: 0, opacity: 100 }}
         initial={{ x: -50, opacity: 0 }}
@@ -26,14 +29,7 @@ const Projects = () => {
         <h3 className="text-xl text-[#fff]">Filter :</h3>
         <div className="lg:flex hidden md:flex-row flex-col sm:w-auto w-fit gap-4 items-center">
           {categories.map((type, index) => (
-            <motion.p
-              whileInView={{ x: 0, opacity: 100 }}
-              initial={{ x: -50, opacity: 0 }}
-              transition={{
-                type: "tween",
-                delay: index === 0 ? 0.2 : 0,
-                duration: 0.5,
-              }}
+            <p
               onClick={() => {
                 setCategory(type);
                 setCurrentPage(1);
@@ -44,7 +40,7 @@ const Projects = () => {
               } px-4 transition-all border-2 border-[#0a192f]`}
             >
               {type}
-            </motion.p>
+            </p>
           ))}
         </div>
         <select
@@ -73,7 +69,12 @@ const Projects = () => {
         <div>
           <div className="grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-12 mt-10">
             {currentProjects.map((project, index) => (
-              <ProjectCard key={index} project={project} />
+              <ProjectCard
+                setActivePlayer={setActivePlayer}
+                setActiveLink={setActiveLink}
+                key={index}
+                project={project}
+              />
             ))}
           </div>
           <Pagination
@@ -81,6 +82,12 @@ const Projects = () => {
             projectPerPage={projectPerPage}
             setCurrrentPage={setCurrentPage}
             currentPage={currentPage}
+          />
+          <IFrame
+            activePlayer={activePlayer}
+            setActivePlayer={setActivePlayer}
+            link={activeLink}
+            setActiveLink={setActiveLink}
           />
         </div>
       )}
